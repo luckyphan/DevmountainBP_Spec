@@ -1,12 +1,12 @@
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
-public class Main {
+public class Mars {
 
         public static void main(String[] args) throws InterruptedException {
             String colonyName = "Lucky";
             int shipPopulation = 300;
             double meals = 4000.00;
-            boolean landing = landingCheck(22);
+            boolean landing = true;
             //everyone eats .75 meals a day, will take 2 days
             meals -= 2 * (shipPopulation * .75);
             System.out.println(meals);
@@ -25,6 +25,7 @@ public class Main {
             else{
                 System.out.println("ERROR!!! Flight plan already set. Landing on the Plain");
             }
+            landing = landingCheck(22);
         }
 
         public static boolean landingCheck (int minutesLeft) throws InterruptedException{
