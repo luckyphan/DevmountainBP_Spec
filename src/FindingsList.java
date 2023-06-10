@@ -29,9 +29,10 @@ public class FindingsList {
         fossils.put("Tooth Fossil","The tooth from an unknown fossil");
         Thread.sleep(500);
         System.out.println("Fossil data is loaded!");
-        System.out.println("Which of the fossils would you like to learn more about: bird, fish, or tooth");
+        System.out.println("Which of the fossils would you like to learn more about: Bird, Fish, or Tooth");
         String fossilChoice = scan.nextLine();
-        System.out.println("Fossil: "+fossilChoice+"Fossil \nDescription: "+fossils.get((fossilChoice+" Fossil")));
+        fossilChoice = fossilChoice.substring(0,1).toUpperCase()+fossilChoice.substring(1,fossilChoice.length()).toLowerCase();
+        System.out.println("Fossil: "+fossilChoice+" Fossil \nDescription: "+fossils.get((fossilChoice+" Fossil")));
 
         HashSet <String> supplies = new HashSet<String>();
         supplies.add("toilet paper");
@@ -40,9 +41,7 @@ public class FindingsList {
         System.out.println("Supplies Before Expedition "+supplies);
         supplies.remove("toilet paper");
         System.out.println("Supplies After Expedition "+supplies);
+
     }
 
-    public static void main(String[] args) throws InterruptedException {
-        new FindingsList();
-    }
 }

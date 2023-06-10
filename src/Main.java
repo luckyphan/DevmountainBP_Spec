@@ -15,7 +15,12 @@ public class Main {
 
             String landingLocation = "The Plain";
             if(landingLocation.equalsIgnoreCase("The Plain")){
+
                 System.out.println("Bbzzz Landing on the Plain");
+                new MarsExpedition();
+                new GuessingGame();
+                new FindingsList();
+
             }
             else{
                 System.out.println("ERROR!!! Flight plan already set. Landing on the Plain");

@@ -27,7 +27,7 @@ public class MarsExpedition {
             System.out.println("That’s way too many people. We can only send 2 more members.");
             team = 2;
         } else if (team < 0) {
-            System.out.println("That’s too little people. We should send at most 2  members.");
+            System.out.println("That’s too little people. We should send at most 2 members.");
             team = 2;
         } else if (team == 2) {
             System.out.println("Perfect team right there. Nice!");
@@ -65,9 +65,4 @@ public class MarsExpedition {
                 "\nBlastoff");
     }
 
-
-    public static void main(String[] args) throws InterruptedException {
-        new MarsExpedition();
-
-    }
 }
